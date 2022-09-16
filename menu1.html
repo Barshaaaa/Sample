@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---Menu list---</title>
+</head>
+
+<body>
+    <style>
+        table {
+            background-color: rgb(175, 161, 161);
+            margin: 20px;
+            position: absolute;
+            left: 20%;
+            opacity: 0.8;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px 0 rgba(228, 224, 224, 0.607);
+
+        }
+
+        td,
+        th {
+            padding: 12px;
+            font-family: 'Times New Roman', Times, serif;
+            cursor: grabbing;
+
+        }
+
+        .center {
+            border: 1px solid black;
+            background-image: url("image/background.jpg");
+            background-size:cover;
+            backface-visibility: initial;
+            background-attachment: scroll;
+            background-repeat: no no-repeat;
+            background-blend-mode: luminosity;
+            background-size: cover;
+            width: 1330px;
+            height: 1050px;
+
+        }
+
+        .card {
+            width: 100%;
+            display: flex;
+
+            justify-content: space-evenly;
+        }
+
+        #logo {
+            position: relative;
+            color: antiquewhite;
+            font-family: cursive;
+            border-radius: 8px;
+            left: 10px;
+            top: 15px;
+        }
+
+        .menu {
+            position: relative;
+            color: antiquewhite;
+            left: 37%;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            font-size: 50px;
+
+        }
+
+        .bulu {
+            background-color: bisque;
+        }
+
+        .tulu {
+            background-color: burlywood;
+        }
+
+        .photo:hover {
+            width: 250px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid grey;
+            box-shadow: 0 4px 8px 0 rgba(168, 155, 155, 0.2);
+        }
+
+        .letter {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            color: bisque;
+            margin-left: 20%;
+        }
+
+        .lit {
+            margin-left: 20%;
+        }
+
+        .last {
+            position: relative;
+            text-align: end;
+            margin-right: 8%;
+        }
+    </style>
+    <div class="center">
+        <div style="background-color: rgba(20, 179, 179, 0.269); color:bisque">
+            <div id="logo">
+                <img src="image\logoo.jpg" alt="Logo" height="70 px" width="70 px">
+            </div>
+            <h1>truYum </h1>
+            <h3 style="text-align:end"><u>Help</u></h3>
+
+        </div>
+        <h2 class="menu">Are you hungryy?? Have a look below</h2>
+        <div class="card">
+            <div class="photo">
+                <img src="image\sandwich.jpeg" alt="sandwich" height="200 px" width="200 px">
+            </div>
+
+            <div class="photo">
+                <img src="image\burger.jpg" alt="burger" height="200 px" width="200 px">
+            </div>
+
+            <div class="photo">
+                <img src="image\pizza.jpg" alt="pizza" height="200 px" width="200 px">
+            </div>
+
+            <div class="photo">
+                <img src="image\french fries.jpg" alt="fries" height="200 px" width="200 px">
+            </div>
+            <div class="photo">
+                <img src="image\choco brownie.jpg" alt="brownie" height="200 px" width="200 px">
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2 class="menu">-------Menu Items------</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Active</th>
+                <th>Date of Launch</th>
+                <th>Category</th>
+                <th>Free Delivery</th>
+                <th>Action</th>
+            </tr>
+            <tr class="bulu">
+                <td>Sandwich</td>
+                <td>Rs. 99.00</td>
+                <td>Yes</td>
+                <td>15/03/2017</td>
+                <td>Main Course</td>
+                <td>Yes</td>
+                <td><u>Edit</u></td>
+            </tr>
+            <tr class="tulu">
+                <td>Burger</td>
+                <td>Rs. 129.00</td>
+                <td>Yes</td>
+                <td>23/12/2017</td>
+                <td>Main Course</td>
+                <td>No</td>
+                <td><u>Edit</u></td>
+            </tr>
+            <tr class="bulu">
+                <td>Pizza</td>
+                <td>Rs. 149.00</td>
+                <td>Yes</td>
+                <td>21/08/2017</td>
+                <td>Main Course</td>
+                <td>No</td>
+                <td><u>Edit</u></td>
+            </tr>
+            <tr class="tulu">
+                <td>French Fries</td>
+                <td>Rs. 57.00</td>
+                <td>No</td>
+                <td>02/07/2017</td>
+                <td>Starters</td>
+                <td>Yes</td>
+                <td><u>Edit</u></td>
+            </tr>
+            <tr class="bulu">
+                <td>Chocolate Brownie</td>
+                <td>Rs. 32.00</td>
+                <td>Yes</td>
+                <td>02/11/2017</td>
+                <td>Desert</td>
+                <td>Yes</td>
+                <td><u>Edit</u></td>
+            </tr>
+        </table>
+    </div>
+    <div class="center">
+        <h2 class="menu">------Add to Cart------</h2>
+        <br>
+        <p class="letter">Item name</p>
+        <div class="lit">
+            <input type="text" name="Name" placeholder="Item name">
+        </div>
+        <br>
+        <br>
+        <label class="letter">Quantity</label>
+        <br>
+        <br>
+        <div class="lit">
+            <input type="number" placeholder="Quantity">
+        </div>
+        <br><br>
+        <br>
+        <label class="letter">Apply Coupon</label>
+        <br><br>
+        <div class="lit">
+            <input type="textarea" placeholder="Coupon Code">
+        </div>
+        <br><br>
+        <br>
+        <label class="letter">Date of Delivery</label>
+        <br><br>
+        <div class="lit">
+            <input type="date" name="Date" placeholder="Date">
+        </div>
+        <br><br>
+        <label class="letter">Category</label>
+        <br>
+        <br>
+        <div class="lit">
+            <select name="Main Course">
+                <option></option>
+                <option value="Main Course">Main Course</option>
+                <option value="Starters">Starters</option>
+                <option value="Dessert">Dessert</option>
+            </select>
+        </div>
+        <br><br>
+        <label class="letter">Delivered to</label>
+        <br><br>
+        <div class="lit">
+            <input type="textarea" placeholder="Address">
+        </div>
+        <br>
+        <label class="letter">Free Delivery</label>
+        <br>
+        <br>
+        <div class="lit">
+            <input type="checkbox" checked>
+        </div>
+        <br>
+        <br>
+        <div class="lit">
+            <button type="submit" style="background-color:rgb(64, 89, 141) ; height:50px; width:100px;">Add to Cart</button>
+        </div>
+           <div class="last">
+        <div class="lit">
+            <button type="submit" style="background-color:rgb(64, 89, 141) ; height:60px; width:120px;" >Place order</button>
+        </div></div>
+        <label style="color:bisque">Follow us</label>
+        <a href="https://instagram.com/_flawsome.04_?igshid=YmMyMTA2M2Y=">
+            <img scr="image\instagram.png" alt="instagram"  width="20px" height="30px"></a>
+        <a href="https://www.facebook.com/barsha.singh.7503314">
+            <img scr="image\facebook.png" alt="facebook" width="20px" height="30px">
+        </a>
+    </div>
+</body>
+
+</html>
